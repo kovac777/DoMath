@@ -1,0 +1,4 @@
+<resources>
+    <string name="main_menu_search_number">Найди число</string>
+    <string name="main_menu_search_color">Найди цвет</string>
+</resources>
