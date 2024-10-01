@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.lifecycle.viewmodel.compose.viewModel
 import app.domath.di.appModule
+import app.domath.presentation.screen.arithmetic.ArithmeticTaskScreen
 import app.domath.presentation.screen.menu.MainMenuScreen
 import app.domath.presentation.screen.searchcolor.SearchColorScreen
 import app.domath.presentation.screen.searchnumber.SearchNumberScreen
@@ -24,6 +25,7 @@ fun App() {
                 Navigation.MainMenu -> MainMenuScreen { navigationViewModel.navigateTo(it) }
                 Navigation.SearchNumber -> SearchNumberScreen { navigationViewModel.popBackStack() }
                 Navigation.SearchColor -> SearchColorScreen { navigationViewModel.popBackStack() }
+                Navigation.SolveExample -> ArithmeticTaskScreen { navigationViewModel.popBackStack() }
             }
         }
 

@@ -26,6 +26,7 @@ internal class NavigationViewModel : ViewModel() {
 
 sealed class Navigation {
     data object MainMenu : Navigation()
-    data object SearchNumber : Navigation()
     data object SearchColor : Navigation()
+    data object SearchNumber : Navigation()
+    data object SolveExample : Navigation()
 }

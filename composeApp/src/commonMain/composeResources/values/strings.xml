@@ -1,4 +1,5 @@
 <resources>
     <string name="main_menu_search_number">Найди число</string>
     <string name="main_menu_search_color">Найди цвет</string>
+    <string name="main_menu_solve_example">Реши пример</string>
 </resources>

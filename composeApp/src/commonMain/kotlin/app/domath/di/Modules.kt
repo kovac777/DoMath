@@ -2,10 +2,12 @@ package app.domath.di
 
 import app.domath.data.provider.audio.AudioProvider
 import app.domath.data.provider.audio.impl.AudioProviderImpl
+import app.domath.domain.GenerateArithmeticTaskUseCase
 import app.domath.domain.GenerateSearchColorTaskUseCase
 import app.domath.domain.GetCongratulationAudioUseCase
 import app.domath.domain.GetFailedAudioUseCase
 import app.domath.domain.GetSearchColorAudioUseCase
+import app.domath.domain.impl.GenerateArithmeticTaskUseCaseImpl
 import app.domath.domain.impl.GenerateSearchColorTaskUseCaseImpl
 import app.domath.domain.impl.GetCongratulationAudioUseCaseImpl
 import app.domath.domain.impl.GetFailedAudioUseCaseImpl
@@ -20,4 +22,5 @@ val appModule = module {
     singleOf(::GetSearchColorAudioUseCaseImpl) bind GetSearchColorAudioUseCase::class
     singleOf(::GetCongratulationAudioUseCaseImpl) bind GetCongratulationAudioUseCase::class
     singleOf(::GetFailedAudioUseCaseImpl) bind GetFailedAudioUseCase::class
+    singleOf(::GenerateArithmeticTaskUseCaseImpl) bind GenerateArithmeticTaskUseCase::class
 }
